@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I Love Coffee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdfaf6;
+      color: #333;
+    }
+
+    nav {
+      background-color: #4b2c20;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-family: 'Lora', serif;
+      font-size: 28px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    nav ul li:hover {
+      color: #d4bba1;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      max-width: 80%;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+      font-family: 'Lora', serif;
+    }
+
+    footer {
+      background-color: #4b2c20;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>I Love Coffee</h1>
+    <ul>
+      <li>Home</li>
+      <li>Types</li>
+      <li>Brewing</li>
+      <li>Gallery</li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Life begins after coffee ☕</h2>
+  </section>
+
+  <section class="section">
+    <h2>Why We Love Coffee</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1587731503309-25e6717b0204?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Espresso">
+        <h3>Bold & Energizing</h3>
+        <p>From espresso shots to cold brews, coffee gives us the fuel to conquer the day.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Latte Art">
+        <h3>Aromatic Art</h3>
+        <p>Every cup is a work of art — from the aroma to the latte foam hearts.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1576158114154-279108bc5caa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Coffee Beans">
+        <h3>Global Flavor</h3>
+        <p>Beans from Ethiopia to Brazil bring distinct notes and traditions to every brew.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 I Love Coffee. Roasted with ❤️ for coffee lovers everywhere.
+  </footer>
+
+</body>
+</html>
